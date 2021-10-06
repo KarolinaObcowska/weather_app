@@ -1,4 +1,5 @@
 import React from 'react'
+import Alert from './components/Alert'
 import LocationInput from './components/LocationInput'
 import Logo from './components/Logo'
 import Spinner from './components/Spinner'
@@ -11,7 +12,7 @@ const App = () => {
 
   const getContent = () => {
     if (error) return <h2>Error when fetching: {error}</h2>
-    if (!data && loading) return <Spinner />
+    if (!data && loading) return <Alert />
     if (!data) return <h2>ble</h2>
     return <Weather data={data} />
   }
