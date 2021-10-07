@@ -12,13 +12,13 @@ const App = () => {
 
   const getContent = () => {
     if (error) return <h2>Error when fetching: {error}</h2>
-    if (!data && loading) return <Alert />
-    if (!data) return <h2>ble</h2>
+    if (!data && loading) return <Spinner />
+    if (!data) return <Alert />
     return <Weather data={data} />
   }
 
   return (
-    <div className="md:bg-hero md:bg-cover flex flex-col justify-center items-center w-screen h-screen">
+    <div className="bg-hero bg-cover bg-fixed flex flex-col  justify-center h-screen items-center w-screen pb-10">
       <Logo />
       <LocationInput
         handleForm={(location) =>

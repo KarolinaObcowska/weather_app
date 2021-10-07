@@ -8,7 +8,7 @@ import AirQuality from '../images/air-quality.png'
 const CurrentWeather = ({ current }) => {
   console.log(current)
   return (
-    <div className="border-b-2 border-solid md:border-b-0 md:border-r-2 border-gray-300 m-3 px-3">
+    <div className="border-b-2 border-solid md:border-b-0 md:border-r-2 border-gray-300 m-4 px-3">
       <p className="break-normal font-sans font-thin tracking-wider text-white text-7xl">
         {current.temp_c}°C
         <img
@@ -53,7 +53,7 @@ const CurrentWeather = ({ current }) => {
       <p className="ml-4 break-normal font-sans font-thin tracking-wider text-white text-md">
         O3: {Math.round(current.air_quality.o3 * 100) / 100}
       </p>
-      <p className="ml-4 break-normal font-sans font-thin tracking-wider text-white text-md">
+      <p className="ml-4 break-normal font-sans mb-4 font-thin tracking-wider text-white text-md">
         SO2: {Math.round(current.air_quality.so2 * 100) / 100}
       </p>
     </div>

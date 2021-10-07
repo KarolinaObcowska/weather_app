@@ -5,7 +5,7 @@ const LocationInput = ({ handleForm }) => {
   const [location, setLocation] = useState()
 
   return (
-    <div className="relative top-12 mt-16 md:mt-0 ">
+    <div className="relative md:top-12 mt-16 md:mt-0 ">
       <form onSubmit={handleForm(location)}>
         <input
           type="text"
