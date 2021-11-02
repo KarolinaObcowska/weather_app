@@ -1,4 +1,4 @@
-The weather app created by react and tailwind. 
+The weather app created with react and tailwind. 
 
 In the project directory, you can run:
 
